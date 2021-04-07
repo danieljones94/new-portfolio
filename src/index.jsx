@@ -8,7 +8,7 @@ import { theme } from "./themes/theme";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <App />
+    <App theme={theme} />
   </ThemeProvider>,
   document.getElementById("root")
 );
