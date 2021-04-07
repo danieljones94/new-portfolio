@@ -6,8 +6,10 @@ import TitleMessage from "./components/TitleMessage";
 
 class App extends React.Component {
   state = {
-    name: "Daniel Jones",
-    interests: ["Web Developer", "Agile Fan", "Design Lover"],
+    info: {
+      name: "Daniel Jones",
+      interests: ["Web Developer", "Agile Fan", "Design Lover"],
+    },
   };
 
   render() {
@@ -15,7 +17,7 @@ class App extends React.Component {
       <div className="App">
         <NavBar />
         <PortfolioCarousel />
-        <TitleMessage info={this.state} />
+        <TitleMessage info={this.state.info} />
       </div>
     );
   }
