@@ -1,7 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import CustomTitle from "./CustomTitle";
-import styled from "styled-components";
 import "../styles/TitleMessage.css";
 
 const TitleMessage = (props) => {
@@ -23,6 +22,7 @@ const TitleMessage = (props) => {
                     `${props.info.interests[0]}`,
                     `${props.info.interests[1]}`,
                     `${props.info.interests[2]}`,
+                    `${props.info.interests[3]}`,
                   ],
                   autoStart: true,
                   loop: true,

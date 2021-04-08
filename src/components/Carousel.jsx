@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import TitleMessage from "./TitleMessage";
+import ScrollDown from "./ScrollDown";
 import "../styles/Carousel.css";
 import SkyLine1 from "../assets/images/SkyLine1.jpg";
 import SkyLine4 from "../assets/images/SkyLine4.jpg";
 import SkyLine3 from "../assets/images/SkyLine3.jpg";
 
-const PortfolioCarousel = (props) => {
+const PortfolioCarousel = () => {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 
@@ -44,6 +44,7 @@ const PortfolioCarousel = (props) => {
           />
         </Carousel.Item>
       </Carousel>
+      <ScrollDown />
     </>
   );
 };
