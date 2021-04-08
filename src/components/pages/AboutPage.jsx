@@ -11,12 +11,8 @@ const AboutPage = (props) => {
   return (
     <div id="about">
       <div className="about">
-        <h2
-          style={{ color: props.theme.primary }}
-          className="pt-3 text-center font-detials pb-3"
-        >
-          About Me
-        </h2>
+        <hr />
+        <h1 className="pt-3 text-center font-details-b pb-3">ABOUT ME</h1>
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
