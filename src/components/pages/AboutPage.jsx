@@ -8,16 +8,15 @@ import Presentation from "../../assets/images/Presentation.JPEG";
 import "../../styles/AboutPage.css";
 
 const AboutPage = (props) => {
-  console.log(props.theme);
   return (
     <div id="about">
       <div className="about">
-        <h1
+        <h2
           style={{ color: props.theme.primary }}
           className="pt-3 text-center font-detials pb-3"
         >
           About Me
-        </h1>
+        </h2>
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
