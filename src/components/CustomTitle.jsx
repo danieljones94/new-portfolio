@@ -10,16 +10,17 @@ const CustomTitle = styled.h1`
     font-size: 1.25em;
   }
   div {
-    color: ${(props) => props.theme.textColor};
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
     .main {
       font-size: 50px;
+      color: ${(props) => props.theme.secondary};
     }
     .sub {
       font-size: 27px;
       letter-spacing: 2px;
+      color: ${(props) => props.theme.textColor};
     }
   }
 `;
