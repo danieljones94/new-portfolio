@@ -82,7 +82,7 @@ const Skills = () => {
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center  card-title">
-                  Programming Languages
+                  Languages
                 </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
