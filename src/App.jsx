@@ -5,8 +5,10 @@ import TitleMessage from "./components/TitleMessage";
 import AboutPage from "./components/pages/AboutPage";
 import SkillsPage from "./components/pages/SkillsPage";
 import ExperiencePage from "./components/pages/ExperiencePage";
+import ProjectsPage from "./components/pages/ProjectsPage";
+import ContactForm from "./components/ContactForm";
 import Container from "react-bootstrap/Container";
-import Fade from "react-bootstrap/Fade";
+import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import "./App.css";
 import { info } from "./data/info";
@@ -43,6 +45,16 @@ class App extends React.Component {
           <Fade duration={500}>
             <ExperiencePage experience={this.state.experience} />
           </Fade>
+        </Container>
+        <Container className="container-box rounded">
+          <hr />
+          <Slide bottom duration={500}>
+            <ProjectsPage />
+          </Slide>
+        </Container>
+        <Container>
+          <hr />
+          <ContactForm />
         </Container>
       </div>
     );
